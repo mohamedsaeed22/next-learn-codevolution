@@ -1,9 +1,15 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      hello world
+    <div>
+      <h1>hello world</h1>
+      <Link href="/about">About</Link>
+      <Link href="/blog">Blog</Link>
+      <Link href="/products">Products</Link>
+      <Link href="/articles/breaking-news-123?lang=en">Articles (en)</Link>
+      <Link href="/articles/breaking-news-123?lang=ar">Articles (ar)</Link>
+      <Link href="/articles/breaking-news-123?lang=fr">Articles (fr)</Link>
     </div>
   );
 }

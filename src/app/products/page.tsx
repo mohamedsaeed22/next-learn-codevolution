@@ -1,12 +1,22 @@
 import React from "react";
+import Link from "next/link";
 
 const ProductList = () => {
   return (
     <div>
-      product list page
-      <h1>product one</h1>
-      <h1>product two</h1>
-      <h1>product three</h1>
+      <Link href="/">Home</Link>
+      <h1>product list page</h1>
+      <h2>
+        <Link href="/products/1">product one</Link>
+      </h2>
+      <h2>
+        <Link href="/products/2">product two</Link>
+      </h2>
+      <h2>
+        <Link href="/products/3" replace>
+          product three
+        </Link>
+      </h2>
     </div>
   );
 };
