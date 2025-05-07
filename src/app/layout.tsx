@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+ import { Metadata } from "next";
+import { ErrorWrapper } from "./error-wrapper";
 // import { Geist, Geist_Mono } from "next/font/google";
 // import "./globals.css";
 
@@ -36,7 +37,7 @@ export default function RootLayout({
         >
           <p>Header</p>
         </header>
-        {children}
+        <ErrorWrapper>{children}</ErrorWrapper>
         <footer
           style={{
             backgroundColor: "ghostwhite",
